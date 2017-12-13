@@ -1,0 +1,28 @@
+Required / Required If,Property Label,Definition,Predicate,Vocabularies/Encoding Schema,Display Label,Dublin Core Mapping,UCSB Mapping (Property Label),UCSB Mapping (Predicate),UCSD Mapping (Property Label),UCSD Mapping (Predicate),single valued
+Required,title,The title of the resource.,http://purl.org/dc/terms/title,,Title,dc:title,title,dc:title,title,dc:title,x
+,titleAlternative,An alternative name for the resource.,http://purl.org/dc/terms/alternative,,,dc:title,variant title,dc:alternative,title:alternative,dc:alternative,
+Required If,creator,A person or organization responsible for creating the resource.,http://purl.org/dc/terms/creator,"NAF, ULAN, Local",Creator,dc:creator,agent:creator,marcrel:cre,agent:creator,dc11:contributor,
+,contributor,A person or organization responsible for making contributions to the resource.,http://purl.org/dc/terms/contributor,"NAF, ULAN, Local",Contributor,dc:contributor,agent:contributor,marcrel:ctb,agent:contributor,dc11:creator,
+Required,publisher,An entity responsible for making the resource available.,http://purl.org/dc/terms/publisher,,Digital Publisher & Contact Info,dc:publisher,publisher name,dc:publisher,agent:publisher,dc11:publisher,x
+,publisherHomepage,,foaf:homepage,,,,,,,,x
+,description,An account of the resource.,http://purl.org/dc/terms/description,,Description,dc:description,note:description,dc:description,note:scope and content,bf:natureOfContent,
+Required If,language,A language of the resource.,http://purl.org/dc/terms/language,ISO 639-2,Language,dc:language,language,dc:language,language,dc:language,
+Required,resourceType,"General nature or type of the resource (e.g., image, text, etc.). Does not capture aboutness. ",http://purl.org/dc/terms/type,DCMIType,Type,dc:type,type of resource/format,dc:type,type of resource,dc:type,
+Required If,rightsHolder,A person or organization owning or managing rights over the resource.,http://purl.org/dc/terms/rightsHolder,"NAF, Local",Rights Holder,dc:rightsHolder,copyright holder,dc:rightsHolder,rights holder,dc:rightsHolder,
+Required,rightStatement,Information about rights held in and over the resource expressed in general terms (i.e. boilerplate statements).,http://purl.org/dc/terms/rights,,Copyright Statement OR Copyright Status,dc:rights,rights & copyright status,dc:rights & premis:hasCopyrightStatus,copyright status,edm:rights,
+,accessRights,Information about who can access the resource or an indication of its security status.,http://purl.org/dc/terms/accessRights,,Access Rights,dc:rights,restrictions,modsrdf:accessCondition,,,
+,license,"An associated license for the object (i.e. Creative Commons license, software licenses, etc.). Defines use/reuse of resources.",http://purl.org/dc/terms/license,,Rights License,dc:rights,,,license,dc:rights,
+Required If,collection,A related resource in which the described resource is physically or logically included.,http://purl.org/dc/terms/isPartOf,,Collection Title,dc:relation,series,opaque:seriesName,,,
+,series,A related resource in which the described resource is physically or logically included.,opaque:seriesName,,Series Title,dc:relation,series,opaque:seriesName,,,
+Required If,dateCreated,Date of creation of the original resource.,http://purl.org/dc/terms/date,W3CDTF,Date Created ,dc:date,date:other,dc:date,date,dc11:date,
+,datePublished,"Date of formal issuance (e.g., publication) of the resource.",http://purl.org/dc/terms/issued,W3CDTF,Date Published ,dc:date,issued date,dc:issued,date:issue,dc:issued,
+,dateModified,"Date on which the resource was changed, i.e., digitized.",http://purl.org/dc/terms/modified,W3CDTF,Date Digitized,dc:date,,,,,
+,subjectTopic,The topic of the resource.,http://purl.org/dc/terms/subject,"LCSH, Local",Subject,dc:subject,subject:topic,dc:subject,subject:topic,dc11:subject,
+,subjectName,A name of the person that the resource is about.,foaf:name,"NAF, ULAN, Local",Subject,dc:subject,subject:name,dc:subject,subject:name,foaf:name,
+,subjectPlace,Spatial characteristics of the resource.,http://purl.org/dc/terms/spatial,"LCSH, GNIS, Local",Subject,dc:subject,subject:spatial,dc:spatial,subject:spatial,dc:spatial,
+,subjectTemporal,Temporal characteristics of the resource.,http://purl.org/dc/terms/temporal,"AAT, Local",Subject,dc:subject,subject:temporal,dc:temporal,subject:temporal,dc:temporal,
+,genreForm,"The genre, form, and/or physical characteristics of the resource being described. The material or physical carrier of the resource. Does not capture aboutness.",http://purl.org/dc/terms/medium,"AAT, Local",Format,dc:format,subject:genre/form,rdaw:formOfWork,,,
+,physicalDescription,"Description or statement indicating the extent, size, or duration of the original, physical resource for digitized content.",http://purl.org/dc/terms/extent,,Physical Description,dc:source,physical description,dc:extent,note:physical description,ucsd:physicalDescription,
+,keyword,Keywords (i.e. non-standard terms) assigned to the resource.,http://schema.org/keywords,,Keywords,dc:subject,subject:keywords,schema:keywords,,,
+,accessionNumber,An archival accession number for the resource.,http://purl.org/dc/terms/identifier,,Accession Number,dc:identifier OR dc:source,local identifier,opaque:accessionNumber,identifier:accession,ucsd:accessionId,
+Required If,collectionCallNumber,The identifier for the collection to which the resource belongs.,http://schema.org/identifier,,Collection Call Number,dc:identifier OR dc:source,,,ucsd:collectionNumberId,ucsd:collectionNumberId,
